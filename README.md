@@ -99,6 +99,6 @@ _________________
 _________________
 
 ## More Resources
-* [OpenFaaS Cookbook](https://github.hpe.com/ryan-rashid/faasml/blob/master/resources/OpenFaas%20Cookbook.docx)
-* [Knative Cookbook](https://github.hpe.com/ryan-rashid/faasml/blob/master/resources/Knative%20Cookbook.docx) (Incomplete)
-* [FaaS Initial Research & Findings](https://github.hpe.com/ryan-rashid/faasml/blob/master/resources/FaaS%20Research.pptx)
+* [OpenFaaS Cookbook](https://github.com/ryanrashid/faasml/blob/master/resources/OpenFaas%20Cookbook.docx)
+* [Knative Cookbook](https://github.com/ryanrashid/faasml/blob/master/resources/Knative%20Cookbook.docx) (Incomplete)
+* [FaaS Initial Research & Findings](https://github.com/ryanrashid/faasml/blob/master/resources/FaaS%20Research.pptx)
