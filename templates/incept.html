@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% block content %}
+    <header>
+        <div id="home">
+            <a href="{{url_for('home')}}">
+                <input type="image" width="100%" src="{{url_for('static', filename='logo.svg')}}"/>
+            </a>
+        </div>
+        <div id="title">
+            <h1>Inception ML Dashboard</h1>
+        </div>
+    </header>
+
+    <div class="container">
+        <form id="image-input">
+            <label for="url"> Image URL: </label>
+            <input size="30" name="url" id="url" type="url" placeholder="URL">
+            <input type="submit" value="Run Model">
+        </form>
+    </div>
+
+    <div class="field1">
+       <fieldset class="scheduler-border">
+           <legend class="scheduler-border"> Your Image </legend>
+           <div id="img-container">
+           </div>
+       </fieldset>
+    </div>
+
+    <div class="field2" style="width: 30%; text-align: center; margin-right: 70px;">
+        <fieldset class="scheduler-border">
+            <legend style="text-align: center;" class="scheduler-border"> Predictions </legend>
+            <div id="mldata">
+            </div>
+        </fieldset>
+    </div>
+{% endblock %}

@@ -1,0 +1,86 @@
+{% extends "base.html" %}
+{% block content %}
+    <header>
+        <div id="home">
+            <a href="{{url_for('home')}}">
+                <input type="image" width="100%" src="{{url_for('static', filename='logo.svg')}}"/>
+            </a>
+        </div>
+        <div id="title">
+            <h1>Interactive Machine Learning Models</h1>
+        </div>
+    </header>
+    <form action="/inception" class="field1">
+        <fieldset class="scheduler-border">
+            <legend class="scheduler-border"> Inception Model </legend>
+            <p>
+                This model of inception has been trained on millions of
+                images and uses the "ImageNet" dataset to classify objects.
+                Simply input a URL for a particular image, and the model will identify
+                the top 10 different possibilities for the subject of the image along
+                with its confidence percentage for each.
+            </p>
+            <p>
+                Github Repository:
+                <a href="https://github.com/faas-and-furious/inception-function">
+                    https://github.com/faas-and-furious/inception-function</a>
+            </p>
+            <button class="block"> Launch Inception </button>
+        </fieldset>
+    </form>
+
+    <form action="/pigo" class="field2">
+        <fieldset class="scheduler-border">
+            <legend class="scheduler-border"> Pigo Blur Model </legend>
+            <p>
+                The Pigo model identifies and blurs faces in images using facial
+                recognition techniques in machine learning. It takes in a URL
+                of an image and returns the photo but blurred for any faces that it is
+                able to detect. Note that the photo must clearly show a face or multiple
+                faces, or else it may fail.
+            </p>
+            <p>
+                Github Repository:
+                <a href="https://github.com/esimov/pigo-openfaas-faceblur">
+                    https://github.com/esimov/pigo-openfaas-faceblur</a>
+            </p>
+            <button class="block"> Launch Pigo </button>
+        </fieldset>
+    </form>
+
+    <form action="/colidr" class="field1">
+        <fieldset class="scheduler-border">
+            <legend class="scheduler-border"> Colidr Model </legend>
+            <p>
+                The Colidr model recreates an image with black lines to give
+                the appearance of a hand-sketched drawing. It is best to use
+                sharp images with clearly defined edges and features to accurately
+                sketch a copy of it.
+            </p>
+            <p>
+                Github Repository:
+                <a href="https://github.com/esimov/openfaas-coherent-line-drawing">
+                    https://github.com/esimov/openfaas-coherent-line-drawing</a>
+            </p>
+            <button class="block"> Launch Colidr </button>
+        </fieldset>
+    </form>
+
+    <form action="/colorize" class="field2">
+        <fieldset class="scheduler-border">
+            <legend class="scheduler-border"> Colorization Model </legend>
+            <p>
+                The Colorization function can turn any black-and-white photo into a
+                fully colored image. The black-and-white input must be as a URL
+                for the request, and the model may not work as intended for already
+                colored images.
+            </p>
+            <p>
+                Github Repository:
+                <a href="https://github.com/alexellis/repaint-the-past">
+                    https://github.com/alexellis/repaint-the-past</a>
+            </p>
+            <button class="block"> Launch Colorize </button>
+        </fieldset>
+    </form>
+{% endblock %}

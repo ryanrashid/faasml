@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+@import url("https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css");
+
+p {
+    font-size: 14.4px;
+    line-height: 1.75;
+}
+
+a {
+    color: #00b388;
+}
+
+a:hover {
+    color: green;
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+}
+
+label {
+    font-family: 'Roboto';
+    font-size: 1.1em !important;
+}
+
+fieldset.scheduler-border {
+    border: 1px groove #ddd !important;
+    padding: 0 1.4em 1.4em 1.4em !important;
+    box-shadow:  5px 5px 5px 5px #ddd;
+    margin-bottom: 50px;
+}
+
+legend.scheduler-border {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2em !important;
+    font-weight: bold !important;
+    text-align: left;
+    width:auto;
+    padding:0 10px;
+    border:none;
+}
+
+.container {
+    text-align: center;
+    margin-bottom: 40px;
+    width: 40%;
+}
+
+.disabled {
+    box-shadow: none;
+	cursor: not-allowed;
+	opacity: 0.5;
+	pointer-events: none;
+}
+
+.block {
+    display: block;
+    text-align: center;
+    background-color: #00b388;
+    color: white;
+    padding: 8px 15px;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.block:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.field1 {
+    float: left;
+    width: 40%;
+    margin-left:50px;
+}
+
+.field2 {
+    float: right;
+    width: 40%;
+    margin-right:50px;
+}
+
+header #home {
+    float: left;
+    background: #ddd;
+    width: 8.5%;
+}
+
+header #home:hover {
+    background: #808080;
+}
+
+header #title {
+    float: right;
+    text-align: center;
+    background: #00b388;
+    width: 91.5%;
+    color: white;
+    font-size: 20px;
+    margin-bottom: 40px;
+}
